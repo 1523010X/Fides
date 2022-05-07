@@ -1,0 +1,50 @@
+.nav
+  max-width 1070px
+  margin 0 auto 100px
+  padding 10px 20px 8px
+  border-radius 10px
+  background $white
+  border 1px solid $gray-light
+  box-shadow 0 14px 39px rgba(0, 0, 0, 0.1)
+  box-sizing border-box
+  &__wrap
+    display flex
+    justify-content space-between
+    align-items center
+  &__list
+    display flex
+    padding 10px 83px 10px 40px
+    border-right 1px solid $blue
+  &__item
+    margin-right 67px
+    &:last-child
+      margin-right 0
+  &__link
+    position relative
+    font-weight $bold
+    z-index 10
+    &:hover:not(:focus-visible)
+      color $blue
+    &:active:not(:focus-visible)
+      color $blue
+    &:focus
+      color $black
+    &:focus-visible
+      color $white
+      outline none
+      &::before
+        content ""
+        position absolute
+        top 50%
+        left 50%
+        width 100%
+        height 100%
+        padding 3px 6px
+        background-color $blue
+        transform translate(-50%,-50%)
+        border-radius 3px
+        z-index -1
+  &__btn
+    padding 4px 22px 4px 21px
+    box-shadow 0 4px 9px rgba(9, 19, 45, 0.28), inset 0px -2px 4px rgba(23, 119, 232, 0.37)
+    background radial-gradient(92.6% 1025.05% at 7.4% 64.63%, rgba(3, 226, 226, 0.53) 0%, rgba(80, 255, 255, 0.53) 0.01%, rgba(0, 133, 255, 0) 100%), #23B5E3

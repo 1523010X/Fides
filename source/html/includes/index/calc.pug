@@ -1,0 +1,22 @@
+section.calc
+  .container
+    h2.calc__title Калькулятор уборки
+    .calc__text Заполните форму и получите персональное коммерческое предложение
+    .calc__wrap
+      .calc__row
+        .calc__item
+          .calc__item-title Площадь
+          select.calc__select.calc__select_first(name="square")
+            option до 20 м.кв.
+            option до 50 м.кв.
+            option до 100 м.кв.
+        .calc__item
+          div.calc__item-title Вид клининга
+          select.calc__select.calc__select_second(name="view")
+            option Комплексная уборка
+            option После ремонта
+        .calc__item
+          div.calc__item-title Частота
+          select.calc__select.calc__select_third(name="count")
+            option Раз в ределю
+            option Ежедневно

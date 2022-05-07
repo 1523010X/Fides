@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: $Mulish;
+  font-size: $px16;
+  font-weight: $normal;
+  font-style: normal;
+  line-height: 150%;
+  color: $black;
+  background: $white;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1328px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  padding: 9px 26px 9px 27px;
+  font-family: $OpenSans;
+  font-size: $px16;
+  letter-spacing: 0.012em;
+  font-weight: $semibold;
+  color: $white;
+  border-radius: 6px;
+  background: radial-gradient(92.6% 1025.05% at 7.4% 64.63%, rgba(0, 107, 205, 0.53) 0%, rgba(1, 118, 184, 0.53) 0.01%, rgba(0, 133, 255, 0) 100%), #009DCE;
+  box-shadow: 0 4px 9px rgba(9, 19, 45, 0.28), inset 0px -2px 4px rgba(23, 119, 232, 0.37);
+  border: 2px solid transparent;
+  transition: 0.2s ease-in-out;
+  &:hover:not(:focus-visible) {
+    background: $white;
+    color: $blue;
+    border-color: $blue;
+    box-shadow: none;
+  }
+  &:active:not(:focus-visible) {
+    background: $white;
+    color: $blue;
+    border-color: $blue;
+    box-shadow: none;
+    outline: none;
+  }
+  &:focus {
+    color: $white;
+  }
+  &:focus-visible {
+    background: $white;
+    color: $blue;
+    border-color: $blue;
+    box-shadow: none;
+    outline: none;
+  }
+}
