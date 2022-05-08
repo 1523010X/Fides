@@ -1,0 +1,69 @@
+.types
+  margin-bottom 100px
+  &__title
+    margin-bottom 13px
+    font-family $OpenSans
+    font-size 24px
+    font-weight 700
+    text-align center
+  &__text
+    margin-bottom 89px
+    text-align center
+    letter-spacing 0.02em
+  &__wrap
+    display grid
+    grid-template-columns repeat(3, 1fr)
+    grid-gap 33px 30px
+  &__item
+    position relative
+    min-height 493px
+    padding 69px 30px 44px 75px
+    background rgba(255, 255, 255, 0.76)
+    box-shadow 0 38px 56px rgba(191, 204, 225, 0.39), 0px 20.7957px 15.3272px rgba(191, 204, 225, 0.177553), 0px 15.8955px 0px rgba(191, 204, 225, 0.0372931)
+    border-radius 8px
+    box-sizing border-box
+    transition visibility 0.3s, opacity 0.3s
+    &:hover
+      cursor pointer
+      background #F9FAFC
+      box-shadow 0 38px 56px rgba(191, 204, 225, 0.39), 0px 20.7957px 15.3272px rgba(191, 204, 225, 0.177553), 0px 15.8955px 0px rgba(191, 204, 225, 0.0372931)
+      border-radius 8px
+      .types__btn
+        visibility visible
+        opacity 1
+  &__item-title
+    max-width 75%
+    margin-bottom 14px
+    font-family $OpenSans
+    font-size 18px
+    font-weight 700
+    line-height 122%
+    &_mb
+      margin-bottom 70px
+  &__item-text
+    margin-bottom 75px
+  &__price
+    margin-bottom 30px
+    color $blue
+    font-weight 700
+    letter-spacing 0.02em
+  &__list
+    margin-bottom 74px
+  &__list-item
+    position relative
+    margin-bottom 15px
+    line-height 150%
+    letter-spacing 0.02em
+    &:last-child
+      margin-bottom 0
+    &::before
+      content url("../img/icons/types-check.svg")
+      position absolute
+      top 2px
+      left -33px
+  &__btn
+    position absolute
+    left 74px
+    bottom 44px
+    visibility hidden
+    opacity 0

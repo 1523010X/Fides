@@ -20,3 +20,23 @@ section.calc
           select.calc__select.calc__select_third(name="count")
             option Раз в ределю
             option Ежедневно
+      ul.calc__list
+        li.calc__list-item
+          input#point1.calc__input(type="checkbox")
+          label.calc__label(for="point1") Поставка расходных материалов
+        li.calc__list-item
+          input#point2.calc__input(type="checkbox")
+          label.calc__label(for="point2") Техническое обслуживание
+        li.calc__list-item
+          input#point3.calc__input(type="checkbox")
+          label.calc__label(for="point3") Вывоз мусора
+      div.calc__footer
+        button.calc__btn.btn Рассчитать
+        ul.calc__footer-list
+          li.calc__footer-item
+            input#beznds.calc__footer-input(type="radio", name="nds")
+            label.calc__footer-label(for="beznds") Без НДС
+          li.calc__footer-item
+            input#snds.calc__footer-input(type="radio", name="nds")
+            label.calc__footer-label(for="snds") С НДС
+        img.calc__footer-logo(src="img/logo.png", alt="")
