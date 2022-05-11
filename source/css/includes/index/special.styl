@@ -1,0 +1,123 @@
+.special
+  position relative
+  &::before
+    content url("../img/icons/special-block.svg")
+    position absolute
+    top 1%
+    right 17.5%
+    z-index -1
+  &__title
+    margin-bottom: 38px
+    font-family $OpenSans
+    font-size 24px
+    font-weight $bold
+    line-height 120%
+    text-align center
+
+  &__text
+    max-width 490px
+    margin 0 auto 56px
+    line-height 150%
+    letter-spacing 0.02em
+    text-align center
+
+  &__wrap
+    position relative
+    max-width 588px
+    margin 0 auto 226px
+    padding 71px 64px 35px 65px
+    background #F0F3F9
+    border-radius 8px
+    box-shadow 0 38px 56px rgba(191, 204, 225, 0.39), 0 20.7957px 15.3272px rgba(191, 204, 225, 0.177553), 0 15.8955px 0 rgba(191, 204, 225, 0.0372931)
+    &::after
+      content ""
+      position absolute
+      bottom -68px
+      right -60px
+      width 395px
+      height 182px
+      background #F9FAFC
+      box-shadow 0 38px 56px rgba(191, 204, 225, 0.39), 0 20.7957px 15.3272px rgba(191, 204, 225, 0.177553), 0 15.8955px 0px rgba(191, 204, 225, 0.0372931)
+      border-radius 8px
+      z-index -1
+
+  &__subtitle
+    margin-bottom: 15px
+    font-family $OpenSans
+    font-size 24px
+    font-weight $bold
+    color #358FC1
+
+  &__price
+    margin-bottom 47px
+    padding-left 7px
+    font-weight $bold
+    letter-spacing 0.02em
+
+  &__list
+    max-width 290px
+
+  &__item
+    position relative
+    margin-bottom 15px
+    line-height 150%
+    letter-spacing 0.02em
+    &::before
+      content url("../img/icons/types-check.svg")
+      position absolute
+      top 2px
+      left -33px
+
+  &__from
+    position absolute
+    top 55px
+    right -136px
+    padding 27px 19px 44px 18px
+    background $white
+    border-radius 8px
+    box-shadow 0 38px 56px rgba(191, 204, 225, 0.39), 0 20.7957px 15.3272px rgba(191, 204, 225, 0.177553), 0 15.8955px 0px rgba(191, 204, 225, 0.0372931)
+    transform rotate(-21.81deg)
+    text-align center
+    &::before
+      content url("../img/icons/price-decor.svg")
+      position absolute
+      bottom -38px
+      left 26px
+      transform rotate(23deg)
+
+  &__from-title
+    margin-bottom 25px
+    font-family $OpenSans
+    font-size 24px
+    font-weight $bold
+    color #358FC1
+
+  &__from-price
+    font-family $OpenSans
+    font-size 38px
+    font-weight 300
+    span
+      font-size 72px
+      font-weight $bold
+
+  &__tool
+    position absolute
+    top 59px
+    left -283px
+    max-width 336px
+    z-index -1
+
+  &__partners
+    display grid
+    grid-template-columns repeat(8, 1fr)
+    grid-column-gap 40px
+    justify-items center
+
+  &__partners-img
+    max-width 74%
+
+  &__img
+    position absolute
+    top -559px
+    width 100%
+    z-index -1
