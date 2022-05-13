@@ -1,0 +1,119 @@
+.iso
+  position relative
+
+  &__header
+    max-width 370px
+    padding-left 38px
+
+  &__title
+    margin-bottom 38px
+    font-family $OpenSans
+    font-weight $bold
+    line-height 120%
+
+  &__text
+    margin-bottom: 23px
+    letter-spacing 0.02em
+
+  &__wrap
+    position relative
+    display grid
+    grid-template-columns repeat(4, 1fr)
+    grid-column-gap 30px
+    padding-left 36px
+    &::before
+      content ""
+      position absolute
+      top 121px
+      left 10px
+      width 100%
+      height 1px
+      background #4E525B
+      z-index -1
+
+  &__item
+    padding-top 28px
+    padding-left 67px
+    &_watch
+      position relative
+      padding-top 14px
+      padding-left 0
+
+    &_orange
+      .iso__item-title
+        color #EF7E4E
+      .iso__circle
+        color #EF7E4E
+        border-color #EF7E4E
+
+    &_green
+      padding-left 53px
+      .iso__item-title
+        color #1E865D
+      .iso__circle
+        color #1E865D
+        border-color #1E865D
+
+    &_red
+      padding-left 46px
+      .iso__item-title
+        color #C32D1F
+      .iso__circle
+        color #C32D1F
+        border-color #C32D1F
+
+
+  &__link
+    position absolute
+    top 97px
+    left 145px
+    max-width 100px
+    font-weight $bold
+    color $blue
+    line-height 120%
+    letter-spacing 0.02em
+    text-decoration underline
+
+  &__item-title
+    max-width 115px
+    margin-bottom 21px
+    font-family $OpenSans
+    font-size 18px
+    font-weight $bold
+    line-height 120%
+
+  &__circle
+    position relative
+    display inline-flex
+    align-items center
+    justify-content center
+    width 60px
+    height 60px
+    margin-bottom 20px
+    font-size 24px
+    border-radius 50%
+    border 1px solid transparent
+    background white
+    z-index 100
+
+  &__text
+    letter-spacing 0.02em
+
+  &__video
+    position absolute
+    bottom 37px
+    left 53px
+    padding-left 60px
+    &::before
+      content url("../img/icons/play.svg")
+      position absolute
+      top -24px
+      left -40px
+
+  &__video-title
+    font-family $OpenSans
+    font-size 18px
+    font-weight $bold
+
+  &__video-link
+    color $blue
