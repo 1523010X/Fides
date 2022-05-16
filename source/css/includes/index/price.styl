@@ -1,0 +1,67 @@
+.price
+  position relative
+  margin-bottom 253px
+  padding-top 182px
+  @media (min-width: 1900px)
+    padding-top 250px
+  &__wrap
+    max-width 397px
+    margin-left 151px
+  &__title
+    margin-bottom 70px
+    font-family $OpenSans
+    font-size 24px
+    font-weight $bold
+  &__text
+    margin-bottom 95px
+    letter-spacing 0.02em
+  &__list
+    max-width 82%
+  &__item
+    position relative
+    margin-bottom 44px
+    &::before
+      content ''
+      position absolute
+      top 0
+      left -39px
+    &:last-child
+      margin-bottom 0
+    &_red
+      .price__item-title
+        color $red
+      &::before
+        content url("../img/icons/check-red.svg")
+    &_green
+      .price__item-title
+        color $green
+      &::before
+        content url("../img/icons/check-green.svg")
+    &_orange
+      .price__item-title
+        color $orange
+      &::before
+        content url("../img/icons/check-orange.svg")
+  &__item-title
+    max-width 81%
+    margin-bottom 22px
+    font-family $OpenSans
+    font-size 18px
+    font-weight $bold
+    line-height 120%
+  &__item-text
+    letter-spacing 0.02em
+  &__img
+    position absolute
+    &_before
+      top -165px
+      right 16px
+      max-width 50%
+      @media (min-width: 1900px)
+        max-width 729px
+    &_after
+      max-width 45%
+      bottom -204px
+      right 138px
+      @media (min-width: 1900px)
+        max-width 651px

@@ -1,0 +1,108 @@
+.clean
+
+  &__title
+    margin-bottom 40px
+    font-family $OpenSans
+    font-size 24px
+    font-weight $bold
+    text-align center
+
+  &__text
+    max-width 730px
+    margin 0 auto 96px
+    text-align center
+    letter-spacing 0.02em
+
+  &__wrap
+    display flex
+    justify-content space-between
+
+  &__item
+    position relative
+    max-width 31%
+    box-sizing border-box
+    transition 0.2s
+    &:first-child
+      padding-top 29px
+    &:hover
+      cursor pointer
+      .clean__btn
+        visibility visible
+        opacity 1
+
+  &__item-subtitle
+    padding 10px 20px 10px 46px
+    font-weight $bold
+    color $blue
+    letter-spacing 0.02em
+
+  &__item-wrap
+    position relative
+    padding 38px 6px 170px 19px
+    background rgba(255, 255, 255, 0.76)
+    box-shadow 0 38px 56px rgba(191, 204, 225, 0.39), 0px 20.7957px 15.3272px rgba(191, 204, 225, 0.177553), 0px 15.8955px 0px rgba(191, 204, 225, 0.0372931)
+    border-radius 8px
+
+  &__item-title
+    margin-bottom 2px
+    padding-left 55px
+    font-family $Jost
+    font-size 20px
+    font-weight 700
+
+  &__item-label
+    display inline-flex
+    margin-bottom 6px
+    margin-left 45px
+    padding 2px 8px 0 8px
+    font-size 12px
+    background #DDEEF8
+    border-radius 8px
+    letter-spacing 0.025em
+
+  &__item-price
+    margin-bottom 6px
+    padding-left 55px
+    font-weight $bold
+    color $blue
+    letter-spacing 0.02em
+
+  &__item-description
+    margin-bottom 42px
+    padding-left 55px
+    letter-spacing 0.02em
+
+  &__list
+    margin-bottom 28px
+
+  &__list-item
+    position relative
+    margin-bottom 5px
+    padding 0 10px 10px 55px
+    border-radius 8px
+    letter-spacing 0.02em
+    &:nth-child(odd)
+      background rgba(182, 191, 217, 0.12)
+    &:last-child
+      margin-bottom 0
+    &::before
+      content url('../img/icons/check-big.svg')
+      position absolute
+      top 1px
+      left 23px
+
+  &__btn
+    position absolute
+    opacity 0
+    visibility hidden
+    bottom 12%
+    left 50%
+    transform translateX(-50%)
+
+  &__footer
+    text-align center
+
+  &__footer-text
+    margin-top 17px
+    font-weight $bold
+    letter-spacing 0.02em
