@@ -1,5 +1,5 @@
 .clean
-
+  margin-bottom 100px
   &__title
     margin-bottom 40px
     font-family $OpenSans
@@ -16,6 +16,7 @@
   &__wrap
     display flex
     justify-content space-between
+    margin-bottom 104px
 
   &__item
     position relative
@@ -24,6 +25,24 @@
     transition 0.2s
     &:first-child
       padding-top 29px
+    &:nth-child(2)
+      .clean__item-subtitle
+        padding 10px 20px 10px 70px
+      .clean__item-wrap
+        padding 66px 6px 49px 15px
+      .clean__item-title
+        margin-bottom 10px
+      .clean__list
+        margin-bottom 17px
+    &:nth-child(3)
+      .clean__item-subtitle
+        padding 39px 20px 10px 62px
+      .clean__item-wrap
+        padding 37px 6px 18px 11px
+      .clean__item-title
+        margin-bottom 11px
+      .clean__list
+        margin-bottom 17px
     &:hover
       cursor pointer
       .clean__btn
@@ -38,7 +57,7 @@
 
   &__item-wrap
     position relative
-    padding 38px 6px 170px 19px
+    padding 38px 6px 163px 19px
     background rgba(255, 255, 255, 0.76)
     box-shadow 0 38px 56px rgba(191, 204, 225, 0.39), 0px 20.7957px 15.3272px rgba(191, 204, 225, 0.177553), 0px 15.8955px 0px rgba(191, 204, 225, 0.0372931)
     border-radius 8px
@@ -71,6 +90,17 @@
     margin-bottom 42px
     padding-left 55px
     letter-spacing 0.02em
+    &_check
+      position relative
+      padding-left: 100px
+      span
+        font-weight $bold
+        color $blue
+      &::before
+        content url("../img/icons/clean-check.svg")
+        position absolute
+        top 2px
+        left 55px
 
   &__list
     margin-bottom 28px
@@ -92,17 +122,96 @@
       left 23px
 
   &__btn
-    position absolute
+    display block
+    margin 0 auto
     opacity 0
     visibility hidden
-    bottom 12%
-    left 50%
-    transform translateX(-50%)
 
   &__footer
     text-align center
 
   &__footer-text
-    margin-top 17px
+    margin-top 11px
+    margin-bottom: 23px
     font-weight $bold
     letter-spacing 0.02em
+
+  &__bonus
+    position relative
+
+  &__bonus-img
+    position absolute
+    top -70px
+    left 33px
+    max-width 364px
+
+  &__bonus-wrap
+    max-width 385px
+    margin 0 auto
+    text-align center
+
+  &__bonus-label
+    margin-bottom 17px
+    padding 9px 18px
+    font-size 18px
+    font-weight $bold
+    color #00B3CB
+    border-radius 5px
+    background #C2E0F3
+
+  &__bonus-title
+    margin-bottom 24px
+    font-family $Jost
+    font-size 20px
+    font-weight 600
+    letter-spacing 0.05em
+    line-height 120%
+    span
+      display block
+      font-size 16px
+
+  &__bonus-list
+    text-align left
+
+  &__bonus-item
+    position relative
+    margin-bottom 15px
+    padding-left 54px
+    letter-spacing 0.02em
+    &::before
+      content url('../img/icons/check-big.svg')
+      position absolute
+      top 1px
+      left 23px
+
+  &__bonus-price
+    position absolute
+    top 146px
+    right 105px
+    padding 27px 19px 44px 18px
+    background $white
+    border-radius 8px
+    box-shadow 0 38px 56px rgba(191, 204, 225, 0.39), 0 20.7957px 15.3272px rgba(191, 204, 225, 0.177553), 0 15.8955px 0px rgba(191, 204, 225, 0.0372931)
+    text-align center
+    transform rotate(1.6deg)
+    &::before
+      content url("../img/icons/price-decor.svg")
+      position absolute
+      bottom -38px
+      left 26px
+      transform rotate(23deg)
+
+  &__bonus-price-title
+    margin-bottom 25px
+    font-family $OpenSans
+    font-size 24px
+    font-weight $bold
+    color #358FC1
+
+  &__bonus-price-text
+    font-family $OpenSans
+    font-size 38px
+    font-weight 300
+    span
+      font-size 72px
+      font-weight $bold
