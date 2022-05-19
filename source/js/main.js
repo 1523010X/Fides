@@ -17,4 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
     itemSelectText: '',
     shouldSort: true,
   });
+
+  new Swiper('.job__slider-container', {
+    loop: true,
+    navigation: {
+      nextEl: '.job__nav-btn_next',
+      prevEl: '.job__nav-btn_prev',
+    },
+    slidesPerView: 2,
+    spaceBetween: 30,
+  });
 });

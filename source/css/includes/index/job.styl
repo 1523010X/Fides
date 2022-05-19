@@ -1,0 +1,119 @@
+.job
+  margin-bottom 70px
+
+  &__title
+    max-width 70%
+    margin 0 auto
+    font-family $OpenSans
+    font-size 44px
+    font-weight 700
+    color #00B3CB
+    text-transform uppercase
+    text-align center
+    line-height 120%
+
+  &__subtitle
+    font-family $OpenSans
+    font-weight 300
+    font-size 127px
+    line-height 100%
+    color #f7f7f7
+    text-align center
+    text-transform uppercase
+
+  &__row-first
+    max-width 77%
+    margin -40px auto 0
+    display flex
+    justify-content space-between
+    .job__item
+      &:last-child
+        padding-top 119px
+
+  &__item
+    max-width 40%
+
+  &__item-false
+    display inline-flex
+    margin-bottom 9px
+    padding 4px 8px 4px 8px
+    font-weight $bold
+    color $white
+    background #C32D1F
+    border-radius 8px
+    text-transform uppercase
+    letter-spacing 0.02em
+
+  &__item-title
+    margin-bottom 49px
+    font-family $OpenSans
+    font-size 24px
+    font-weight $bold
+    line-height 120%
+
+  &__item-true
+    display inline-flex
+    margin-bottom 13px
+    padding 4px 8px 4px 8px
+    font-weight $bold
+    letter-spacing 0.02em
+    background #C2E0F3
+    text-transform uppercase
+    border-radius 8px
+
+  &__item-text
+    letter-spacing 0.02em
+
+  &__item-btn
+    margin-top 64px
+
+  &__row-block
+    display flex
+    justify-content space-between
+
+  &__row-wrap
+    max-width 48%
+    padding-left 153px
+
+  &__slider
+    max-width 45%
+    overflow hidden
+
+  &__row-second
+    margin-bottom 40px
+    .job__subtitle
+      margin-bottom 17px
+      text-align left
+
+    .job__item
+      max-width 60%
+
+  &__nav
+    margin-top 40px
+
+  &__nav-btn
+    width 55px
+    height 55px
+    &_prev
+      margin-right 30px
+      background url("../img/icons/slider-prev.svg") top center
+      background-size cover
+    &_next
+      background url("../img/icons/slider-next.svg") top center
+      background-size cover
+
+  &__slider
+    padding-top 102px
+
+  &__row-third
+    position relative
+    .job__subtitle
+      text-align right
+    .job__item
+      margin-left auto
+
+  &__img
+    position absolute
+    top 0
+    left 0
+    max-width 650px
